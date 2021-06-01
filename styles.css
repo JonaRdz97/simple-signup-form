@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    /*background: white;
+    background-image: url("./images/Colored-Shapes.svg");
+    background-size: cover;
+    background-position: center;*/
+}
+
+.container{
+    width: 85%;
+    margin: 50px auto auto;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: 900px;
+}
+
+.container-text{
+    margin: 30% auto;
+    color: white;
+}
+
+.container-text h1{
+    margin: auto 20% 20px 15%;
+    font-size: 2.5rem;
+}
+
+.container-text h3{
+    font-weight: 400;
+    margin: auto 15% auto;
+    font-size: 1rem;
+}
+
+/*.container-form{
+    border: 2px solid black;
+    margin-bottom: 10%;
+}*/
+
+#btn-try-it{
+    display: inline-block;
+    margin-top: 4.5rem;
+    border: none;
+    background:hsl(248, 32%, 49%);
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20%;
+    width: calc(80% - 10px);
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 2px 0 hsla(249, 10%, 26%, 0.815);
+}
+
+
+form{
+    background: white;
+    margin: 30px 20% 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 2px 0 hsl(249, 10%, 26%, 0.815);
+}
+
+.input-container{
+    position: relative;
+    width: 85%;
+    margin: 25px auto;
+}
+
+.input-data{
+    width: calc(100% - 5px);
+    height: 45px;
+    font-weight: 600;
+    border: 2px solid hsl(246, 25%, 77%);
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+.icon-error{
+    position: absolute;
+    right: 5px;
+    top: 20%;
+}
+
+.error-msg{
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    font-weight: 600;
+    width: 100%;
+}
+
+#claim{
+    display: block;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    text-align: center;
+    width: calc(85% + 2px);
+    height: 50px;
+    margin: 10px auto;
+}
+
+#claim:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+form p, form a{
+    font-size: .6rem;
+}
+
+form .terms{
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    margin: auto 15%;
+}
+
+form a{
+    font-weight: 600;
+    color: hsl(0, 100%, 74%) ;
+    text-decoration: none;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: white;
+}
+
+.attribution{
+    font-size: .8rem;
+    text-align: center;
+}
+
+.attribution a{
+    color: black;
+}
+
+.visible{
+    display: none;
+}
+
+.error-border-color{
+    color: hsl(0, 100%, 74%);
+    border: 1px solid hsl(0, 100%, 74%);
+}

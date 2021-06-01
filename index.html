@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-text">
+      <h1>Learn to code by watching others</h1>
+      <h3>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</h2>
+    </div>
+    <div class="container-form">
+      <a href="#" role="button" id="btn-try-it"><strong>Try it free 7 days</strong> then $20/mo. thereafter</a>
+      <form name="principalForm" method="POST">
+        <div class="input-container">
+          <input name="name" class="input-data" type="text" placeholder="First Name"><span class="icon-error visible"><img src="./images/icon-error.svg" alt=""></span>
+          <p class="error-msg visible">Type a valid Name</p>
+        </div>
+        <div class="input-container">
+          <input name="last_name" class="input-data" type="text" placeholder="Last Name"><span class="icon-error visible"><img src="./images/icon-error.svg" alt=""></span>
+          <p class="error-msg visible">Type a valid Last Name</p>
+        </div>
+        <div class="input-container">
+          <input name="email" class="input-data" type="text" placeholder="Email Address"><span class="icon-error visible"><img src="./images/icon-error.svg" alt=""></span>
+          <p class="error-msg visible">Looks like this is not an email</p>
+        </div>
+        <div class="input-container">
+          <input name="pass" class="input-data" type="password" placeholder="Password"><span class="icon-error visible"><img src="./images/icon-error.svg" alt=""></span>
+          <p class="error-msg visible">Password cannot be empty and must be at least 6 characters long.</p>
+        </div>
+        <input type="submit" value="CLAIM YOUR FREE TRIAL" id="claim">
+        <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </form>
+    </div>
+  </div> 
+  <footer>
+    <p class="attribution text">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/JonaRdz97" target="_blank" rel="noopener noreferrer"> Jonathan Rodríguez</a>.
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
