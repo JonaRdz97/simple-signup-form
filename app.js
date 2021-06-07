@@ -17,7 +17,8 @@ button_submit.addEventListener('click', function(event){
         Swal.fire({
             title: "Successfully",
             text: "Your data has been sent correctly",
-            icon: "success"
+            icon: "success",
+            heightAuto: false
         }).then(() => {
             form.submit(); // se envian los datos
         })

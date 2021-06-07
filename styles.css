@@ -8,20 +8,23 @@
 
 body{
     width: 100vw;
-    /*background: white;
+    min-height: 100vh;
+    height: auto;
+    background: white;
     background-image: url("./images/Colored-Shapes.svg");
     background-size: cover;
-    background-position: center;*/
+    background-position: top;
+    background-attachment: fixed;
 }
 
 .container{
     width: 85%;
-    margin: 50px auto auto;
+    max-width: 1500px;
+    height: auto;
     background-color: hsl(0, 100%, 74%);
     background-image: url(./images/bg-intro-desktop.png);
     display: grid;
     grid-template-columns: 50% 50%;
-    max-height: 900px;
 }
 
 .container-text{
@@ -40,23 +43,18 @@ body{
     font-size: 1rem;
 }
 
-/*.container-form{
-    border: 2px solid black;
-    margin-bottom: 10%;
-}*/
-
 #btn-try-it{
     display: inline-block;
     margin-top: 4.5rem;
     border: none;
     background:hsl(248, 32%, 49%);
     color: white;
-    font-weight: 500;
-    padding: 10px;
+    font-weight: 400;
+    padding:  10px 20px;
     border-radius: 5px;
     margin-right: 20%;
-    width: calc(80% - 10px);
-    height: 25px;
+    width: calc(80% - 40px);
+    height: auto;
     text-align: center;
     text-decoration: none;
     box-shadow: 0px 4px 2px 0 hsla(249, 10%, 26%, 0.815);
@@ -138,9 +136,7 @@ form a:hover{
 }
 
 footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    margin: 40px 10px 0;
     background: white;
 }
 
@@ -160,4 +156,161 @@ footer{
 .error-border-color{
     color: hsl(0, 100%, 74%);
     border: 1px solid hsl(0, 100%, 74%);
+}
+
+
+/********** Media queries  **************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 12px;
+    }
+
+    .container{
+        margin: 0;
+        width: 100%;
+    }
+
+    .container-text, .container-form{
+        grid-column: 1/-1;
+        margin: 10px 0;
+    }
+    
+    .container-text h1{
+        text-align: center;
+        margin: 50px 5% 20px 5%;
+    }
+    
+    .container-text h3{
+        text-align: center;
+        margin: auto 5% auto;
+    }
+
+    #btn-try-it, form{
+        margin: 20px 10%;
+    }
+
+    #btn-try-it{
+        padding-top: 20px;
+        font-size: 1.1rem;
+        height: 40px;
+    }
+
+    #claim{
+        font-size: .9rem;
+    }
+
+    footer{
+        margin: 0;
+        background: hsl(0, 100%, 74%);
+        color: white;
+    }
+    
+    .attribution{
+        font-size: .8rem;
+        text-align: center;
+    }
+    
+    .attribution a{
+        color: white;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 601px and up) */
+@media only screen and (min-width: 601px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container{
+        margin: 0;
+        width: 100%;
+    }
+
+    .container-text, .container-form{
+        grid-column: 1/-1;
+        margin: 10px 0;
+    }
+    
+    .container-text h1{
+        text-align: center;
+        margin: 50px 5% 20px 5%;
+    }
+    
+    .container-text h3{
+        text-align: center;
+        margin: auto 5% auto;
+    }
+
+    #btn-try-it, form{
+        margin: 20px 10%;
+    }
+
+    footer{
+        margin: 0;
+        background: hsl(0, 100%, 74%);
+        color: white;
+    }
+
+    .attribution a{
+        color: white;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+   
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+
+    .container-text, .container-form{
+        grid-column: span 1;
+        margin: 10px 0;
+    }
+
+    .container-text{
+        margin: 30% auto;
+    }
+    
+    footer{
+        margin: 40px 10px 0;
+        background: white;
+        color: black;
+    }
+
+    .attribution a{
+        color: black;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html{
+        font-size: 16px;
+    }
+
+    .container{
+        width: 85%;
+    }
+
+    .container-text h1{
+        text-align: left;
+        margin: auto 20% 20px 15%;
+    }
+    
+    .container-text h3{
+        text-align: left;
+        font-weight: 400;
+        margin: auto 15% auto;
+    }
 }
